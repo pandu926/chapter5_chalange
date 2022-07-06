@@ -1,0 +1,83 @@
+body {
+  background-color: #9c835f;
+}
+header h1 {
+  font-size: 3vw;
+  color: #f9b23d;
+}
+header img {
+  width: 4vw;
+  margin-right: 2vw;
+  height: 4vw;
+}
+
+#game #player {
+  height: 80%;
+  width: 20%;
+  left: 20%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+#game #player img,
+#game #computer img {
+  display: block;
+  margin-left: 30%;
+  width: 10vw;
+  height: 9vw;
+  margin-top: 5%;
+  padding: 2vw;
+  border-radius: 10%;
+}
+#game #player h1,
+#game #computer h1 {
+  font-size: 4vw;
+}
+#game #vs {
+  height: 80%;
+  width: 15%;
+  left: 44%;
+  position: absolute;
+}
+#game #vs h1 {
+  font-size: 7vw;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.3em;
+  color: #bd0000;
+  margin-top: 80%;
+}
+#game #vs #result {
+  height: 12vw;
+  width: 16vw;
+  background-color: #4c9654;
+  position: absolute;
+  top: 28%;
+  transform: rotate(-28.87deg);
+  border-radius: 4%;
+  opacity: 0;
+}
+#vs #result p {
+  font-size: 3vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 2vw;
+  color: white;
+}
+#game #computer {
+  height: 80%;
+  width: 20%;
+  left: 60%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#reset {
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  width: 6vw;
+}
