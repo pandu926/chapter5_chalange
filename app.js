@@ -6,13 +6,17 @@ const userRoute = require("./admin/auth.router");
 
 const view = __dirname + "/views/";
 app.use(express.static(__dirname + "/assets/chapter4/"));
-app.use(express.static(path.join(__dirname, "assets/chapter3/")));
+app.use(express.static(__dirname + "/assets/chapter3/"));
+
+app.set("view engine", "html");
+app.engine("html", require("ejs").renderFile);
+app.set("views", "./views");
 
 app.get("/game", (req, res) => {
     res.sendFile(path.join(view + "chapter4/index.html"));
 });
 app.get("/", (req, res) => {
-    res.sendFile(path.join(view + "chapter3/index.html"));
+    res.render("chapter3/index");
 });
 
 app.use(express.json());
